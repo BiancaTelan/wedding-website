@@ -1,8 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Gallery() {
-  const basePath = import.meta.env.BASE_URL; // Automatically becomes "/wedding-website/" on GitHub Pages
-
+  const basePath = import.meta.env.BASE_URL; 
   const images = [
     `${basePath}images/gallery1.jpg`,
     `${basePath}images/gallery2.jpg`,
