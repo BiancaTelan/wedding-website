@@ -1,6 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Gallery() {
+  const basePath = import.meta.env.BASE_URL; // Automatically becomes "/wedding-website/" on GitHub Pages
+
   const images = [
     `${basePath}images/gallery1.jpg`,
     `${basePath}images/gallery2.jpg`,
@@ -18,7 +20,13 @@ export default function Gallery() {
               <img
                 src={src}
                 alt={`Gallery ${idx}`}
-                style={{ width: '250px', height: '200px', objectFit: 'cover', borderRadius: '0.25rem', boxShadow: '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)' }}
+                style={{
+                  width: '250px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '0.25rem',
+                  boxShadow: '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'
+                }}
               />
             </Col>
           ))}
