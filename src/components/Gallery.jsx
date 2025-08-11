@@ -2,10 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Gallery() {
   const images = [
-    "/images/gallery1.jpg",
-    "/images/gallery2.jpg",
-    "/images/gallery3.jpg",
-    "/images/gallery4.jpg"
+    "/wedding-website/images/gallery1.jpg",
+    "/wedding-website/images/gallery2.jpg",
+    "/wedding-website/images/gallery3.jpg",
+    "/wedding-website/images/gallery4.jpg"
   ];
 
   return (
