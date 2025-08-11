@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf8;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #b5838d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff7f8;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
