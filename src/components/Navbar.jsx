@@ -30,6 +30,8 @@ export default function Navbar() {
               smooth={true}
               duration={500}
               offset={0}
+              spy={true}
+              isDynamic={true}
             >
               Home
             </Nav.Link>
