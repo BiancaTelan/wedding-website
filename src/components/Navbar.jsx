@@ -1,19 +1,66 @@
 import { Container, Nav, Navbar as BSNavbar } from "react-bootstrap";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   return (
     <BSNavbar expand="lg" bg="white" sticky="top" className="shadow-sm">
       <Container>
-        <BSNavbar.Brand href="#home" style={{ fontFamily: 'Great Vibes', fontSize: '2rem', color: '#b5838d' }}>
+        {/* Brand - scrolls to home */}
+        <BSNavbar.Brand
+          as={Link}
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          style={{
+            fontFamily: "Great Vibes",
+            fontSize: "2rem",
+            color: "#b5838d",
+            cursor: "pointer",
+          }}
+        >
           John & Jane
         </BSNavbar.Brand>
+
         <BSNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BSNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#details">Details</Nav.Link>
-            <Nav.Link href="#gallery">Gallery</Nav.Link>
-            <Nav.Link href="#rsvp">RSVP</Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="details"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
+              Details
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="gallery"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
+              Gallery
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="rsvp"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
+              RSVP
+            </Nav.Link>
           </Nav>
         </BSNavbar.Collapse>
       </Container>
