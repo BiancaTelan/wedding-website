@@ -5,8 +5,7 @@ export default function Navbar() {
   return (
     <BSNavbar expand="lg" bg="white" sticky="top" className="shadow-sm">
       <Container>
-        {/* Brand - scrolls to home */}
-        <BSNavbar.Brand
+         <BSNavbar.Brand
           as={Link}
           to="home"
           smooth={true}

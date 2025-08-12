@@ -10,10 +10,25 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <EventDetails />
-      <Gallery />
-      <RSVP />
+      {/* Home */}
+      <section id="home">
+        <Hero />
+      </section>
+
+      {/* Event Details */}
+      <section id="details">
+        <EventDetails />
+      </section>
+
+      {/* Gallery */}
+      <section id="gallery">
+        <Gallery />
+      </section>
+
+      {/* RSVP */}
+      <section id="rsvp">
+        <RSVP />
+      </section>
       <Footer />
     </>
   );
