@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import EventDetails from "./components/EventDetails";
 import Gallery from "./components/Gallery";
 import RSVP from "./components/RSVP";
 //import Footer from "./components/Footer";
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <EventDetails />
       <Gallery />
       <RSVP />
       <Footer />
