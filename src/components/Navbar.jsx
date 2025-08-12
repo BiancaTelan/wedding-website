@@ -11,6 +11,7 @@ export default function Navbar() {
         <BSNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#details">Details</Nav.Link>
             <Nav.Link href="#gallery">Gallery</Nav.Link>
             <Nav.Link href="#rsvp">RSVP</Nav.Link>
           </Nav>
