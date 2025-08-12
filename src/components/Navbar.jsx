@@ -29,7 +29,7 @@ export default function Navbar() {
               to="home"
               smooth={true}
               duration={500}
-              offset={-70}
+              offset={0}
             >
               Home
             </Nav.Link>
