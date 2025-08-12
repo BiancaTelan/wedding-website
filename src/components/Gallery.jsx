@@ -1,12 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Gallery() {
-  const basePath = import.meta.env.BASE_URL; 
+  const base = import.meta.env.BASE_URL;
+   
   const images = [
     `${basePath}.images/gallery1.jpg`,
-    `${basePath}images/gallery2.jpg`,
-    `${basePath}images/gallery3.jpg`,
-    `${basePath}images/gallery4.jpg`
+    `${basePath}.images/gallery2.jpg`,
+    `${basePath}.images/gallery3.jpg`,
+    `${basePath}.images/gallery4.jpg`
   ];
 
   return (
