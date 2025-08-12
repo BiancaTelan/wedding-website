@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
+
+/* New Footer Style Start */
+#wave-foo{
+  position: relative;
+  width: 100%;
+  /* height: 20rem; */
+  background-color: #090702;
+  margin-top: 8rem !important;
+}
+#wave-foo::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  background: url('/new-images/wave2.svg') no-repeat center top;
+  background-size: cover;
+  top: -10rem;
+  left: 0;
+  transform: scaleY(-1);
+}
+@media screen and (max-width: 500px) {
+  #wave-foo::before {
+    height: 5rem;
+     top: -5rem;
+  }
+}
+#wave-foo article{
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 1.4rem 1.8rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+#wave-foo article .foo-closing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+#wave-foo article .foo-closing h2{
+  color: #F7F7F7;
+  line-height: 150%;
+  font-size: 24px;
+  font-family: var(--el-messiri);
+}
+#wave-foo article .foo-closing p{
+  max-width: 559px;
   text-align: center;
+  color: #AFAFAF;
+  line-height: 150%;
+  font-size: 15px;
+  font-family: var(--poppins);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#wave-foo article .foo-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+#wave-foo article .foo-details a{
+  color: #AFAFAF;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 150%;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#wave-foo article .foo-details ul{
+  display: flex;
+  gap: 25px;
 }
-
-.card {
-  padding: 2em;
+#wave-foo article .foo-details li{
+  list-style: none;
 }
-
-.read-the-docs {
-  color: #888;
-}
+/* New Footer Style End */
