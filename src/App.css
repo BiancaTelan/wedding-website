@@ -75,4 +75,13 @@
 #wave-foo article .foo-details li{
   list-style: none;
 }
+@media screen and (max-width: 575px) {
+  #wave-foo article .foo-details{
+    flex-direction: column;
+    gap: 15px;
+  }
+  #wave-foo article .foo-details ul{
+    padding-left: 0;
+  }
+}
 /* New Footer Style End */
