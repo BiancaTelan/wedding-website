@@ -2,13 +2,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Gallery() {
   const base = import.meta.env.BASE_URL;
-   
+
   const images = [
-    `${basePath}.images/gallery1.jpg`,
-    `${basePath}.images/gallery2.jpg`,
-    `${basePath}.images/gallery3.jpg`,
-    `${basePath}.images/gallery4.jpg`
-  ];
+  `${import.meta.env.BASE_URL}images/gallery1.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery2.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery3.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery4.jpg`
+];
 
   return (
     <section id="gallery" className="py-5 bg-light">
