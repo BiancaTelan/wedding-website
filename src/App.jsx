@@ -6,6 +6,7 @@ import RSVP from "./components/ui/RsvpForm";
 import Footer from "./components/ui/Footer";
 import Countdown from "./components/Countdown"; 
 import "./App.css"; 
+import OurStory from "./components/OurStory";
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
       {/* Event Details */}
       <section id="details">
         <EventDetails />
+      </section>
+
+      {/* OurStory */}
+      <section className="OurStory">
+        <OurStory />
       </section>
 
       {/* Gallery */}
