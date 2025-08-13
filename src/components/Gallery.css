@@ -36,7 +36,7 @@
 
 .gallery-grid img {
   width: 100%;
-  aspect-ratio: 4 / 3; 
+  max-height: 400px; 
   object-fit: cover;
   border-radius: 4px;
   display: block;
@@ -95,4 +95,8 @@
     grid-column: 1 / span 1 !important;
     aspect-ratio: 4 / 3;
   }
+}
+
+#gallery {
+    margin-bottom: 4rem;
 }
