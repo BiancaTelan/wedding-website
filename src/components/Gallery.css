@@ -101,13 +101,14 @@
   }
 
   .gallery-grid img:nth-child(1) {
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1 ;
+    width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
   }
 
   .gallery-grid img {
-    grid-column: auto !important;
+    grid-column: auto;
     aspect-ratio: auto;
     width: 100%;
     height: auto;
