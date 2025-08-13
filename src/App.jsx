@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import EventDetails from "./components/EventDetails";
 import Gallery from "./components/Gallery";
-import RSVP from "./components/RSVP";
+// import RSVP from "./components/RSVP";
+import RSVP from "./components/ui/RsvpForm";
 //import Footer from "./components/Footer";
 import Footer from "./components/ui/Footer";
 
