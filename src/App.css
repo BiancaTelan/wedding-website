@@ -18,10 +18,10 @@
   left: 0;
   transform: scaleY(-1);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
   #wave-foo::before {
     height: 5rem;
-     top: -5rem;
+    top: -5rem;
   }
 }
 #wave-foo article{
@@ -54,7 +54,6 @@
   font-size: 15px;
   font-family: var(--poppins);
 }
-
 #wave-foo article .foo-details{
   display: flex;
   align-items: center;
@@ -87,6 +86,198 @@
 /* New Footer Style End */
 
 /* Rsvp Form Start */
+#rsvp-form{
+  width: 100%;
+  /* height: 30rem; */
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#rsvp-form > .rsvp-pre-title{
+  color: #AFAFAF;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: center;
+}
+#rsvp-form > .rsvp-title{
+  color: #090702;
+  font-size: 54px;
+  line-height: 100%;
+  font-weight: 600;
+  text-align: center;
+  max-width: 605px;
+  font-family: var(--el-messiri);
+}
+#rsvp-form > .rsvp-label{
+  color: #090702;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
+  max-width: 620px;
+  font-family: var(--el-messiri);
+}
+#rsvp-form > .rsvp-btn{
+  background-color: #090702;
+  font-family: var(--poppins);
+  color: #F7F7F7;
+  border-radius: 5px;
+  width: 137px;
+  height: 47px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+
+#rsvp-main-form{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  inset: 0;
+  background-color: #0907024f;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#rsvp-main-form > form{
+  width: 600px;
+  /* height: 500px; */
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 35px;
+}
+#rsvp-main-form > form > h2{
+  color: #090702;
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: var(--el-messiri);
+}
+#rsvp-main-form > form > p{
+  color: #090702;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--poppins);
+  max-width: 360px;
+  margin-bottom: 2rem;
+}
 
 
+#rsvp-main-form > form label{
+  font-size: 11px;
+  color: #5d5d5d;
+  font-family: var(--poppins);
+  position: absolute;
+  background-color: #F7F7F7;
+  padding: 0px 13px; 
+  border: 1px solid #C5C5C5;
+  border-radius: 3px;
+  top: -27%;
+  left: 8px;
+}
+#rsvp-main-form > form input,
+#rsvp-main-form > form select,
+#rsvp-main-form > form textarea {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #C5C5C5;
+  font-size: 13px;
+  padding: 8px 10px; 
+  padding-top: 10px !important;
+  border-radius: 4px;
+  width: 100%;
+  color: #090702;
+}
+#attendance {
+  padding-right: 2.5rem;  /* add right padding */
+  -webkit-appearance: none;  /* remove default arrow */
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg%20width='11'%20height='6'%20viewBox='0%200%2011%206'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M1%201L5.5%205L10%201'%20stroke='%23757575'%20stroke-width='1.6'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background-size: .60rem;
+}
+
+#rsvp-main-form > form > .form-group{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#rsvp-main-form > form .input-fields{
+  position: relative;
+  width: 100%;
+
+}
+
+#rsvp-main-form > form button{
+  background-color: #090702;
+  font-family: var(--poppins);
+  color: #F7F7F7;
+  border-radius: 5px;
+  width: 110px;
+  height: 40px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  margin-top: .80rem;
+}
+
+#mess-label{
+  top: -12px !important;
+}
+
+@media screen and (max-width: 575px) {
+  #rsvp-form{
+    padding: 5rem 1.3rem 2.7rem 1.3rem;
+    align-items: self-start;
+    gap: 15px;
+  }
+  #rsvp-form > .rsvp-title,
+  #rsvp-form > .rsvp-label{
+    text-align: left;
+  }
+  #rsvp-form > .rsvp-btn{
+    width: 117px;
+    height: 39px;
+    font-size: 12px
+  }
+
+  #rsvp-main-form > form > h2{
+    font-size: 35px;
+  }
+  #rsvp-main-form > form > p{
+    margin-bottom: .3rem;
+    font-size: 14px;
+  }
+  #rsvp-main-form > form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0px;
+  }
+  #rsvp-main-form > form .input-fields{
+    margin-top: 1.7rem;
+  }
+  #rsvp-main-form > form button{
+    background-color: #090702;
+    font-family: var(--poppins);
+    color: #F7F7F7;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    margin-top: .70rem;
+  }
+
+}
 /* Rsvp Form End */
