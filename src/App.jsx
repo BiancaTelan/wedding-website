@@ -30,6 +30,7 @@ function App() {
       <section id="rsvp">
         <RSVP />
       </section>
+      
       <Footer />
     </>
   );
