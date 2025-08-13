@@ -9,6 +9,7 @@ export default function Gallery() {
   `${base}new-images/gallery3.jpg`,
   `${base}new-images/gallery4.jpg`,
   `${base}new-images/gallery5.jpg`,
+  `${base}new-images/gallery1.jpg`,
 ];
 
   return (
