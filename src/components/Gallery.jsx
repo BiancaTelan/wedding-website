@@ -22,7 +22,7 @@ export default function Gallery() {
       </div>
       <div className="gallery-grid">
         {images.map((src, idx) => (
-          <img key={idx} src={src} alt={`Gallery ${idx + 1}`} />
+          <img key={idx} src={src} alt={`Gallery ${idx + 1}`} loading="lazy" />
         ))}
       </div>
     </section>
