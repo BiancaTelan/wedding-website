@@ -4,12 +4,12 @@ import "./Gallery.css";
 export default function Gallery() {
   const base = import.meta.env.BASE_URL;
   const images = [
-  `${base}new-images/gallery1.jpg`,
-  `${base}new-images/gallery2.jpg`,
-  `${base}new-images/gallery3.jpg`,
-  `${base}new-images/gallery4.jpg`,
   `${base}new-images/gallery5.jpg`,
-  `${base}new-images/galler5.jpg`,
+  `${base}new-images/img2.jpg`,
+  `${base}new-images/img3.png`,
+  `${base}new-images/img4.jpg`,
+  `${base}new-images/img1.jpg`,
+  `${base}new-images/img6.png`,
 ];
 
   return (
