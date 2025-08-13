@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 2rem;
   background: #fff;
+  position: static;
 }
 
 .gallery-header {
@@ -75,4 +76,12 @@
   grid-column: 1 / span 2;
   grid-row: 4;
   height: 200px;
+}
+
+.gallery-section img {
+    display: block;
+}
+
+#gallery {
+    margin-bottom: 4rem;
 }
