@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import dsa from "/new-images/mesh.png";
 export default function RSVP() {
   const [formOpen, setFormOpen] = useState(false);
   const formRef = useRef(null);
@@ -30,6 +30,7 @@ export default function RSVP() {
           <h1 className="rsvp-title">A moment to respond and share in our joy</h1>
           <p className="rsvp-label">Please let us know if you’ll be joining us as we celebrate this special day. Your response helps us create a memorable experience filled with love, laughter, and cherished moments shared together.</p>
           <button className="rsvp-btn" onClick={() => setFormOpen(true)}>Fill-up RSVP</button>
+          {/* <img src={dsa} alt="" /> */}
       </section>
 
       {formOpen && (<div id="rsvp-main-form">

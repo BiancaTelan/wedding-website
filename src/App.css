@@ -6,6 +6,7 @@
   /* height: 20rem; */
   background-color: #090702;
   margin-top: 8rem !important;
+  z-index: 5;
 }
 #wave-foo::before {
   content: '';
@@ -95,6 +96,30 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  position: relative;
+}
+#rsvp-form::before {
+   content: '';
+  position: absolute;
+  top: 7.27rem;
+  left: -18rem;
+  width: 800px;     /* exact image width */
+  height: 800px;    /* exact image height */
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain; /* or leave out */
+  z-index: -1;
+
+}
+#rsvp-form::after {
+   content: '';
+  position: absolute;
+  top: -20.27rem;
+  right: -18rem;
+  width: 800px;     /* exact image width */
+  height: 800px;    /* exact image height */
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain; /* or leave out */
+  z-index: -1;
 }
 #rsvp-form > .rsvp-pre-title{
   color: #AFAFAF;
@@ -153,6 +178,7 @@
   border-radius: 10px;
   padding: 35px;
 }
+
 #rsvp-main-form > form > h2{
   color: #090702;
   font-size: 40px;

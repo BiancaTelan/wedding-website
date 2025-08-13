@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fffaf8;
   color: #333;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -24,10 +24,9 @@ h1, h2, h3 {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff7f8;
   color: #333;
 }
 
 h1, h2, h3 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--el-messiri), serif;
 }
