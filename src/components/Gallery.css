@@ -108,9 +108,24 @@
   }
 
   .gallery-grid img {
+    /* Resetting grid properties for mobile */
+    grid-column: auto;
+    grid-row: auto;
     width: 100%;
     height: auto;
+    aspect-ratio: 4 / 3; /* Use a more balanced aspect ratio */
     object-fit: cover;
-    aspect-ratio: 16 / 9;
+  }
+
+  /* Resetting specific image layouts to ensure they all stack properly */
+  .gallery-grid img:nth-child(1),
+  .gallery-grid img:nth-child(2),
+  .gallery-grid img:nth-child(3),
+  .gallery-grid img:nth-child(4),
+  .gallery-grid img:nth-child(5),
+  .gallery-grid img:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+    height: auto;
   }
 }
