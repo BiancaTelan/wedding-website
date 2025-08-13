@@ -82,7 +82,7 @@
 }
 
 /* ===== Tablet Layout ===== */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -97,7 +97,7 @@
     aspect-ratio: 16 / 7;
     height: auto;
   }
-}
+} */
 
 /* ===== Mobile Layout  ===== */
 @media (max-width: 576px) {
