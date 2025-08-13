@@ -2,7 +2,7 @@
 
  .hero {
    height: 100vh;
-   background: url('/new-images/hero-background.png') no-repeat center center/cover;
+   background: url('/new-images/Home.png') no-repeat center center/cover;
    display: flex;
    align-items: center;
    padding: 0 50px;
@@ -56,6 +56,7 @@
    font-family: 'Playfair Display', serif;
    font-size: 3rem;
    font-weight: 700;
+   color: white;
  }
 
  .date {
@@ -77,32 +78,31 @@
  /* Mobile Styles */
  @media (max-width: 768px) {
    .right-text {
-     font-size: 4rem; /* Adjust this value as needed */
-     bottom: 20px; /* Adjust bottom spacing if needed */
-     right: 20px; /* Adjust right spacing if needed */
+     font-size: 4rem; 
+     bottom: 20px; 
+     right: 20px; 
    }
 
    .left-text {
-     padding-bottom: 30px; /* Adjust bottom padding for left text on mobile */
+     padding-bottom: 30px; 
    }
 
    .left-text h1 {
-     font-size: 2.5rem; /* Adjust main heading size on mobile */
+     font-size: 2.5rem; 
    }
 
    .left-text small {
-     font-size: 1rem; /* Adjust small text size on mobile */
-   }
-
+     font-size: 1rem; 
    .left-text p {
-     font-size: 1.1rem; /* Adjust paragraph size on mobile */
+     font-size: 1.1rem; 
    }
 
    .date {
-     font-size: 1.5rem; /* Adjust date size on mobile */
+     font-size: 1.5rem; 
    }
 
    .hero {
-     padding: 0 20px; /* Adjust overall padding on mobile */
+     padding: 0 20px; 
    }
  }
+}
