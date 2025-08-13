@@ -73,13 +73,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .gallery-grid img {
+    aspect-ratio: 4 / 3;
+  }
+
   .gallery-grid img:nth-child(1) {
     grid-column: 1 / span 2;
     aspect-ratio: 16 / 7;
-  }
-
-  .gallery-grid img:nth-child(5) {
-    aspect-ratio: 4 / 3;
   }
 }
 
@@ -90,8 +90,10 @@
   }
 
   .gallery-grid img {
-    grid-column: 1 / span 1 !important;
+    grid-column: auto !important;
     aspect-ratio: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
