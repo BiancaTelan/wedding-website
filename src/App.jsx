@@ -7,7 +7,7 @@ import Footer from "./components/ui/Footer";
 import Countdown from "./components/Countdown"; 
 import "./App.css"; 
 import OurStory from "./components/OurStory";
-import Guestbook from "./components/Guestbook";
+
 
 function App() {
   return (
@@ -41,11 +41,6 @@ function App() {
       {/* RSVP */}
       <section id="rsvp">
         <RSVP />
-      </section>
-
-      {/* Guestbook */}
-      <section id="message">
-        <Guestbook />
       </section>
       
       <Footer />
