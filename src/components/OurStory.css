@@ -1,6 +1,6 @@
 .our-story {
   padding: 80px 0;
-  background-color: #fdf5f0;
+  background-color: #ffffffff;
   color: #333;
   font-family: 'Montserrat', sans-serif;
   transition: all 0.3s ease;
@@ -27,12 +27,54 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto 50px;
+  margin-bottom: 100px;
   color: #555;
 }
 
 .story-content {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.story-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+}
+
+.text-and-image-wrapper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.story-image {
+  width: 40%;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .story-content h3 {
@@ -50,8 +92,13 @@
   color: #555;
 }
 
-/* Mobile Styles */
+
 @media (max-width: 768px) {
+
+  .text-and-image-wrapper {
+    flex-direction: column;
+  }
+
   .our-story {
     padding: 50px 0;
   }
@@ -63,6 +110,12 @@
   .section-intro {
     font-size: 1rem;
     margin-bottom: 30px;
+  padding: 0 15px;
+  }
+  
+  .story-content {
+    flex-direction: column;
+    padding: 0 15px;
   }
   
   .story-content h3 {
@@ -72,30 +125,20 @@
   .story-content p {
     font-size: 1rem;
   }
-}
-.story-images {
-  display: flex;
-  gap: 20px;
-  margin: 40px 0;
-}
-
-.story-images img {
-  width: 50%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .story-images {
-    flex-direction: column;
+  
+  .story-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    margin: 30px auto 0;
   }
   
-  .story-images img {
+  .story-image img {
     width: 100%;
+    max-height: 400px;
   }
 }
 
-.story-images img:hover {
+.story-image img:hover {
   transform: scale(1.02);
 }
