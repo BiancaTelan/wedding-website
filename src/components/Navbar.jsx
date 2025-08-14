@@ -6,14 +6,16 @@ function Navbar() {
     <header>
       <nav>
         <a href="#home">Home</a>
+        <a href="#details">Details</a>
         <a href="#our-story">Our Story</a>
-        <a href="#gallery">Gallery</a>
+        
       </nav>
       <div className="logo">John &amp; Jane</div>
       <nav>
-        <a href="#details">Details</a>
-        <a href="#message">Message</a>
+        
+        <a href="#gallery">Gallery</a>
         <a href="#rsvp">RSVP</a>
+        <a href="#message">Message</a>
       </nav>
     </header>
   );

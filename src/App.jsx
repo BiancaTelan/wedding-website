@@ -29,7 +29,7 @@ function App() {
       </section>
 
       {/* OurStory */}
-      <section className="OurStory">
+      <section id="our-story" className="OurStory">
         <OurStory />
       </section>
 
