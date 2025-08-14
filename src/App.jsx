@@ -25,9 +25,9 @@ function App() {
       </section>
 
       {/* Event Details */}
-      <section id="details">
+      {/* <section id="details">
         <EventDetails />
-      </section>
+      </section> */}
 
       {/* OurStory */}
       <section id="our-story" className="OurStory">
