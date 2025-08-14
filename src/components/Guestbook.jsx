@@ -34,15 +34,13 @@ const Guestbook = () => {
         <div className="guestbook-card">
           <p className="guestbook-from">From: Ann C.</p>
           <p>
-            Wishing you a lifetime of love, laughter, and beautiful memories
-            together. Thank you for letting me be part of your special day! 💗
+            Wishing you both a lifetime of happines! 💗
           </p>
         </div>
         <div className="guestbook-card">
           <p className="guestbook-from">From: Javy E.</p>
           <p>
-            Wishing you a lifetime of love, laughter, and beautiful memories
-            together. Thank you for letting me be part of your special day! 💗
+            Best wishes to the happy couple! 💗
           </p>
         </div>
       </div>
