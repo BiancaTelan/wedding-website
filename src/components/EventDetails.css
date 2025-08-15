@@ -1,0 +1,154 @@
+/* EventDetails.css */
+
+/* Overall Events Section */
+.events-section {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-family: var(--el-messiri);
+  font-size: 2.75rem;
+  color: #b5838d; /* matches your existing accent */
+  margin-bottom: 2rem;
+}
+
+/* Ceremony & Reception Blocks */
+.event-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #fdfaf9;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.ceremony-details {
+  flex: 1;
+  min-width: 260px;
+  text-align: left;
+}
+
+.ceremony-details h5 {
+  font-family: var(--el-messiri);
+  font-size: 1.6rem;
+  color: #b5838d;
+  margin-bottom: 0.5rem;
+}
+
+.ceremony-details p {
+  font-family: var(--poppins);
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.map-link {
+  margin-top: 0.6rem;
+  display: inline-block;
+  color: #b5838d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.map-link:hover {
+  color: #8a5a62;
+}
+
+.ceremony-map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ceremony-map iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Dress Code Section */
+.dress-code {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.dress-code h5 {
+  font-family: var(--el-messiri);
+  font-size: 1.8rem;
+  color: #b5838d;
+  margin-bottom: 1.75rem;
+}
+
+.dress-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dress-images div {
+  max-width: 200px;
+}
+
+.dress-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 0.5rem;
+}
+
+.color-palette-img {
+  max-width: 450px;
+  width: 100%;
+  margin-top: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Wedding Timeline Section */
+.timeline {
+  margin: 3rem 0;
+}
+
+.timeline-title {
+  font-family: var(--el-messiri);
+  font-size: 1.8rem;
+  color: #b5838d;
+  margin-bottom: 1.25rem;
+}
+
+.wedding-timeline-img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .event-block {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+  .ceremony-map iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-section h2 {
+    font-size: 2.2rem;
+  }
+  .ceremony-details h5,
+  .dress-code h5,
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+}
