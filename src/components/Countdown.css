@@ -30,10 +30,19 @@
   z-index: -1;
 }
 
+.countdown-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .countdown-message {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: #090702;
+  color: #333;
   margin-bottom: 2rem;
 }
 
@@ -55,7 +64,7 @@
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
   font-weight: 700;
-  color: #090702;
+  color: #333;
 }
 
 .countdown-label {
@@ -63,7 +72,7 @@
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: black;
+  color: #333;
   text-transform: uppercase;
 }
 

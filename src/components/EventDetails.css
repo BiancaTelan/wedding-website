@@ -34,7 +34,7 @@
 .events-section h2 {
   font-family: var(--el-messiri);
   font-size: 2.75rem;
-  color: #b5838d; 
+  color: #333; 
   margin-bottom: 2rem;
 }
 
@@ -60,7 +60,7 @@
 .ceremony-details h5 {
   font-family: var(--el-messiri);
   font-size: 1.6rem;
-  color: #b5838d;
+  color: #333;
   margin-bottom: 0.5rem;
 }
 
@@ -74,7 +74,7 @@
 .map-link {
   margin-top: 0.6rem;
   display: inline-block;
-  color: #b5838d;
+  color: #333;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -105,7 +105,7 @@
 .dress-code h5 {
   font-family: var(--el-messiri);
   font-size: 1.8rem;
-  color: #b5838d;
+  color: #333;
   margin-bottom: 1.75rem;
 }
 
@@ -144,7 +144,7 @@
 .timeline-title {
   font-family: var(--el-messiri);
   font-size: 1.8rem;
-  color: #b5838d;
+  color: #333;
   margin-bottom: 1.25rem;
 }
 
