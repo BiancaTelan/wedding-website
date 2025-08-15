@@ -4,6 +4,28 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
+}
+
+.gallery-section::before,
+.gallery-section::after {
+  content: '';
+  position: absolute;
+  width: 800px; 
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.gallery-section::before {
+  top: 5rem;
+  left: -18rem;
+}
+
+.gallery-section::after {
+  top: -15rem;
+  right: -18rem;
 }
 
 .gallery-header {
