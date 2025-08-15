@@ -48,7 +48,10 @@ function App() {
         <Guestbook />
       </section>
       
-      <Footer />
+      {/* Contacts */}
+      <section id="contacts">
+        <Footer />
+      </section>
     </>
   );
 }
