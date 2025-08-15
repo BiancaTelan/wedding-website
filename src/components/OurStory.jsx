@@ -7,6 +7,7 @@ function OurStory() {
   return (
     <section className="our-story">
       <div className="container">
+        <div className="story-label">OUR STORY</div>
         <h2 className="section-title">Born from a love for moments & memories</h2>
         <p className="section-intro">
           Our journey is shaped by passion, strength, and the moments that define who we truly are. 

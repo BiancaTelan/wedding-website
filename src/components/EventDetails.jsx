@@ -2,16 +2,19 @@ import React from "react";
 import "./EventDetails.css";
 
 export default function Events() {
+  const imgBase = import.meta.env.BASE_URL + "new-images/";
+
   return (
     <section className="events-section" id="events">
-      <h2>Event Details</h2>
+      <div className="event-label">DETAILS</div>
+      <h2>When & Where</h2>
 
       {/* Ceremony */}
       <div className="event-block ceremony-block">
         <div className="ceremony-details">
           <h5>Ceremony</h5>
           <p>
-            Date: June 15, 2024<br />
+            Date: November 8, 2025<br />
             Time: 3:00 PM<br />
             Venue: Ina ng Laging Saklolo Parish<br />
             <a
@@ -43,7 +46,7 @@ export default function Events() {
         <div className="ceremony-details">
           <h5>Reception</h5>
           <p>
-            Date: June 15, 2024<br />
+            Date: November 8, 2025<br />
             Time: 6:00 PM<br />
             Venue: Aquila Crystal Palace Tagaytay<br />
             Address: #328 Brgy Maitim 2nd St. E. Aguinaldo Highway, Tagaytay City, 4120 Cavite<br />
@@ -77,7 +80,7 @@ export default function Events() {
         <div className="dress-images">
           <div>
             <img
-              src="/new-images/men-attire.png"
+              src={`${imgBase}men-attire.png`}
               alt="Men's Dress Code"
               className="dress-img"
             />
@@ -85,7 +88,7 @@ export default function Events() {
           </div>
           <div>
             <img
-              src="/new-images/ladies-attire.png"
+              src={`${imgBase}ladies-attire.png`}
               alt="Women's Dress Code"
               className="dress-img"
             />
@@ -96,21 +99,23 @@ export default function Events() {
           We encourage our guests to dress according to our color palette below:
         </p>
         <img
-          src="/new-images/color-palette.png"
+          src={`${imgBase}color-palette.png`}
           alt="Wedding Color Palette"
           className="color-palette-img"
         />
       </div>
 
-      {/* Timeline */}
+      {/* Timeline (optional) */}
+      {/* 
       <div className="timeline">
         <div className="timeline-title">Our Wedding Day Timeline</div>
         <img
-          src="/new-images/wedding-timeline.jpg"
+          src={`${imgBase}wedding-timeline.jpg`}
           alt="Wedding Timeline"
           className="wedding-timeline-img"
         />
       </div>
+      */}
     </section>
   );
 }
