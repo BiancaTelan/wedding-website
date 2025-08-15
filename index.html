@@ -5,11 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>💍 Wedding</title>
-    <script type="module" crossorigin src="/wedding-website/assets/index-DTheh0KB.js"></script>
-    <link rel="stylesheet" crossorigin href="/wedding-website/assets/index-C_v9fOZl.css">
+    
+    <!-- EL Messiri Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Favicon Icons JAE -->
+    <link rel="icon" type="image/png" href="/wedding-website/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/wedding-website/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/wedding-website/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wedding-website/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="JAE" />
+    <link rel="manifest" href="/wedding-website/favicons/site.webmanifest" />
+
+    <title>John & Jane's Wedding</title>
+    <script type="module" crossorigin src="/wedding-website/assets/index-CuIZ73Am.js"></script>
+    <link rel="stylesheet" crossorigin href="/wedding-website/assets/index-BBlC625j.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
+    <!-- Plugin Script Tags -->
+    <script src="/wedding-website/js/lenis.js"></script>
+    <script>// Initialize Lenis Smooth Scroll
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+      </script>
   </body>
 </html>
