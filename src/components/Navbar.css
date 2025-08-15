@@ -8,25 +8,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  z-index: 10;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-  font-size: 14px;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  padding: 15px 30px;
+  background: transparent;
+  z-index: 100;
 }
 
 .logo {
@@ -36,12 +20,157 @@ nav a:hover {
 }
 
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 150;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+
+.side-arrow {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background: rgba(0, 0, 0, 0.95);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: right 0.3s ease;
+  z-index: 300;
+  pointer-events: none;
+}
+
+.side-panel.open {
+  right: 0;
+  pointer-events: auto;
+}
+
+.side-panel a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.side-panel a:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  position: relative; 
+  z-index: 200;       
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 24px;    
+  color: #fff;     
+}
+
+.right-panel-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 300; 
+  background-color: #333;
+  color: #fff; 
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  nav {
-    display: none; 
+  header {
+    padding: 10px 20px;
   }
 
-  header {
-    justify-content: center;
+  .menu-toggle {
+    position: absolute; 
+    top: 15px;
+    right: 20px;
+  }
+
+  .dropdown-menu {
+    right: 10px;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .side-panel {
+    width: 200px;
+  }
+
+  .side-arrow {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .right-panel-button {
+    display: block; 
+    right: 10px;    
   }
 }
