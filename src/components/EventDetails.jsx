@@ -4,7 +4,7 @@ import "./EventDetails.css";
 export default function Events() {
   return (
     <section className="events-section" id="events">
-      <h2>Events</h2>
+      <h2>Event Details</h2>
 
       {/* Ceremony */}
       <div className="event-block ceremony-block">
