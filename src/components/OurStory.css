@@ -4,6 +4,34 @@
   color: #333;
   font-family: 'Montserrat', sans-serif;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-story::before {
+  content: '';
+  position: absolute;
+  top: 10rem;
+  left: -18rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.our-story::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: -15rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.8;
 }
 
 .story-label {
@@ -20,6 +48,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -87,24 +117,134 @@
   transition: transform 0.3s ease;
 }
 
-.story-content h3 {
+/* Timeline Styles */
+.timeline-section {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.timeline-section::before {
+  content: '';
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  width: 600px;
+  height: 600px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.timeline-section::after {
+  content: '';
+  position: absolute;
+  bottom: 18rem;
+  right: 10rem;
+  width: 600px;
+  height: 600px;
+  background: url('/new-images/mesh.png') no-repeat right bottom;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.timeline-heading {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 2.5rem;
   color: #333;
 }
 
-.story-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  color: #555;
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 1;
 }
 
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #d4a373;
+  top: 40px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% - 80px);
+}
 
+.timeline-item {
+  padding: 30px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #d4a373;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.timeline-content {
+  width: calc(50% - 60px);
+  padding: 20px;
+  background-color: rgba(253, 250, 249, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  position: relative;
+  margin-top: -15px;
+  backdrop-filter: blur(2px);
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.timeline-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #8a5a62;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.timeline-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-
   .text-and-image-wrapper {
     flex-direction: column;
   }
@@ -120,7 +260,7 @@
   .section-intro {
     font-size: 1rem;
     margin-bottom: 30px;
-  padding: 0 15px;
+    padding: 0 15px;
   }
   
   .story-content {
@@ -139,13 +279,51 @@
   .story-image {
     width: 100%;
     max-width: 500px;
-    margin-top: 30px;
     margin: 30px auto 0;
   }
   
   .story-image img {
     width: 100%;
     max-height: 400px;
+  }
+
+  /* Timeline Mobile Styles */
+  .timeline::before {
+    left: 30px;
+    height: calc(100% - 60px);
+    top: 30px;
+    bottom: 30px;
+  }
+  
+  .timeline-dot {
+    left: 30px;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 80px);
+    margin-left: 50px !important;
+    margin-top: -10px;
+  }
+  
+  .timeline-item {
+    padding: 25px 0;
+  }
+
+  .timeline-section::before,
+  .timeline-section::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0.5;
+  }
+  
+  .timeline-section::before {
+    top: -5rem;
+    left: -8rem;
+  }
+  
+  .timeline-section::after {
+    bottom: -5rem;
+    right: -8rem;
   }
 }
 
