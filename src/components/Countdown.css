@@ -1,13 +1,39 @@
 .countdown-section {
+  position: relative; 
   padding: 4rem 2rem;
-  background-color: #F7F7F7; 
+  background-color: #F7F7F7;
   text-align: center;
 }
 
+
+.countdown-section::before {
+  content: '';
+  position: absolute;
+  top: 7rem;
+  left: -18rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: -1;
+}
+
+.countdown-section::after {
+  content: '';
+  position: absolute;
+  top: -20rem;
+  right: -18rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: -1;
+}
+
 .countdown-message {
-  font-family: 'Playfair Display', serif; 
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: #090702; 
+  color: #090702;
   margin-bottom: 2rem;
 }
 
@@ -29,18 +55,17 @@
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
   font-weight: 700;
-  color: #090702; 
+  color: #090702;
 }
 
 .countdown-label {
-  font-family: var(--poppins); 
+  font-family: var(--poppins);
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: black; 
+  color: black;
   text-transform: uppercase;
 }
-
 
 @media (max-width: 768px) {
   .countdown-section {

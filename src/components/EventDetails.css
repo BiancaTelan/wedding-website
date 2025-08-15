@@ -1,21 +1,44 @@
-/* EventDetails.css */
-
-/* Overall Events Section */
 .events-section {
+  position: relative; 
   padding: 4rem 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
+
+.events-section::before {
+  content: '';
+  position: absolute;
+  top: 7rem;
+  left: -18rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: -1;
+}
+
+.events-section::after {
+  content: '';
+  position: absolute;
+  top: -20rem;
+  right: -18rem;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat left top;
+  background-size: contain;
+  z-index: -1;
+}
+
 .events-section h2 {
   font-family: var(--el-messiri);
   font-size: 2.75rem;
-  color: #b5838d; /* matches your existing accent */
+  color: #b5838d; 
   margin-bottom: 2rem;
 }
 
-/* Ceremony & Reception Blocks */
+
 .event-block {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +96,7 @@
   border-radius: 8px;
 }
 
-/* Dress Code Section */
+
 .dress-code {
   margin: 3rem 0;
   text-align: center;
@@ -113,7 +136,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Wedding Timeline Section */
+
 .timeline {
   margin: 3rem 0;
 }
@@ -131,7 +154,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .event-block {
     flex-direction: column;
