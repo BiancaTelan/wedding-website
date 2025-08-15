@@ -1,6 +1,29 @@
 .guestbook-section {
   text-align: center;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.guestbook-section::before,
+.guestbook-section::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.guestbook-section::before {
+  top: 5rem;
+  left: -18rem;
+}
+
+.guestbook-section::after {
+  top: -15rem;
+  right: -18rem;
 }
 
 .guestbook-subtitle {
