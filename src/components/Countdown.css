@@ -1,40 +1,39 @@
 .countdown-section {
-  position: relative; 
+  position: relative;
   padding: 4rem 2rem;
-  background-color: #F7F7F7;
   text-align: center;
+  overflow: hidden; 
 }
 
-
-.countdown-section::before {
+.countdown-section::before,
+.countdown-section::after {
   content: '';
   position: absolute;
+  background: url('/new-images/mesh.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.6; 
+  pointer-events: none; 
+}
+
+.countdown-section::before {
   top: 7rem;
   left: -18rem;
   width: 800px;
   height: 800px;
-  background: url('/new-images/mesh.png') no-repeat left top;
-  background-size: contain;
-  z-index: -1;
 }
 
 .countdown-section::after {
-  content: '';
-  position: absolute;
   top: -20rem;
   right: -18rem;
   width: 800px;
   height: 800px;
-  background: url('/new-images/mesh.png') no-repeat left top;
-  background-size: contain;
-  z-index: -1;
 }
 
 .countdown-title {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 600;
-  color: #333;
+  color: #333; 
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -80,15 +79,15 @@
   .countdown-section {
     padding: 2rem 1rem;
   }
-  
+
   .countdown-container {
     gap: 1rem;
   }
-  
+
   .countdown-number {
     font-size: 2.5rem;
   }
-  
+
   .countdown-label {
     font-size: 0.7rem;
   }
