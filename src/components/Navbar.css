@@ -8,13 +8,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 20px;
   z-index: 10;
 }
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -33,4 +33,15 @@ nav a:hover {
   font-family: 'Great Vibes', cursive;
   font-size: 1.5rem;
   color: white;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none; 
+  }
+
+  header {
+    justify-content: center;
+  }
 }
