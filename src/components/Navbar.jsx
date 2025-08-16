@@ -50,6 +50,7 @@ function Navbar() {
           <a href="#gallery" onClick={() => setDropdownOpen(false)}>Gallery</a>
           <a href="#rsvp" onClick={() => setDropdownOpen(false)}>RSVP</a>
           <a href="#message" onClick={() => setDropdownOpen(false)}>Message</a>
+          <a href="#faq" onClick={() => setDropdownOpen(false)}>FAQs</a>
           <a href="#contacts" onClick={() => setDropdownOpen(false)}>Contacts</a>
         </div>
       )}
@@ -63,6 +64,7 @@ function Navbar() {
         <a href="#gallery" onClick={() => setSidePanelOpen(false)}>Gallery</a>
         <a href="#rsvp" onClick={() => setSidePanelOpen(false)}>RSVP</a>
         <a href="#message" onClick={() => setSidePanelOpen(false)}>Message</a>
+        <a href="#faq" onClick={() => setDropdownOpen(false)}>FAQs</a>
         <a href="#contacts" onClick={() => setDropdownOpen(false)}>Contacts</a>
       </div>
     </>

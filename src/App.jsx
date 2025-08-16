@@ -8,6 +8,7 @@ import Countdown from "./components/Countdown";
 import "./App.css"; 
 import OurStory from "./components/OurStory";
 import Guestbook from "./components/Guestbook";
+import FAQs from "./components/faq"
 
 function App() {
   return (
@@ -46,6 +47,11 @@ function App() {
       {/* Guestbook */}
       <section id="message">
         <Guestbook />
+      </section>
+
+      {/* FAQ's */}
+      <section id="faq">
+        <FAQs />
       </section>
       
       {/* Contacts */}
