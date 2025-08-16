@@ -44,7 +44,7 @@ export default function RSVP() {
                 <input type="text" name="name" id="name" required  />
               </div>
               <div className="input-fields">
-                <label htmlFor="guest">Guest</label>
+                <label htmlFor="guest">Guest name <span style={{ fontSize: "8px"}}>+1 only</span> </label>
                 <input type="text" name="guest" id="guest" required  />
               </div>
             </div>
