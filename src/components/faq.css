@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.faq-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.faq-section::before,
+.faq-section::after {
+  content: '';
+  position: absolute;
+  width: 800px; 
+  height: 800px;
+  background: url('/new-images/mesh.png') no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.faq-section::before {
+  top: 5rem;
+  left: -18rem;
+}
+
+.faq-section::after {
+  top: -15rem;
+  right: -18rem;
+}
+
+.faq-label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #AFAFAF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--poppins);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: var(--el-messiri), serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #f8f8f8;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 1rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px; /* enough space for answers */
+  padding: 1rem;
+}
